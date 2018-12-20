@@ -28,7 +28,7 @@
 		"description": "React memo component"
 	},
 	"React:Component:Stateless": {
-		"prefix": "rsc",
+		"prefix": ["comp", "rsc"],
 		"body": [
 			"import react from 'react';",
 			"",
@@ -40,7 +40,7 @@
 		"description": "React stateless component"
 	},
 	"React:Component:Stateless:Proptypes": {
-		"prefix": "rscp",
+		"prefix": ["comp", "rsc", "rscp"],
 		"body": [
 			"import react from 'react';",
 			"import PropTypes from 'prop-types';",
@@ -73,7 +73,7 @@
 		"description": "React pure component"
 	},
 	"React:PureComponent:Proptypes": {
-		"prefix": "pure",
+		"prefix": ["pure", "purep"],
 		"body": [
 			"import react, { PureComponent } from 'react';",
 			"",
@@ -93,7 +93,7 @@
 		"description": "React pure component with PropTypes"
 	},
 	"React:Component": {
-		"prefix": "comp",
+		"prefix": ["comp", "compo"],
 		"body": [
 			"import react, { Component } from 'react';",
 			"",
@@ -110,7 +110,7 @@
 		"description": "React regular component"
 	},
 	"React:Component:Proptypes": {
-		"prefix": "comp",
+		"prefix": ["comp", "compp"],
 		"body": [
 			"import react, { Component } from 'react';",
 			"",
@@ -150,7 +150,7 @@
 			"}",
 			"export default connect(mapStateToProps)(${1:${TM_FILENAME_BASE}});"
 		],
-		"description": "React regular component"
+		"description": "Regular react component with redux"
 	},
 	"React:Component:Redux:Proptypes": {
 		"prefix": ["comp", "rcomp", "rcompp", "rrc", "rrcp", "reduxcomp"],
@@ -176,7 +176,7 @@
 			"};",
 			"export default ${1:${TM_FILENAME_BASE}};"
 		],
-		"description": "React regular component with PropTypes"
+		"description": "Regular react component with redux and proptypes"
 	},
 
 	"React:Func:Bind": {
