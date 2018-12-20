@@ -10,5 +10,21 @@
 			"export default ${1:${TM_FILENAME_BASE}};"
 		],
 		"description": "React memo component"
+	},
+	"React:MemoProptypes": {
+		"prefix": "memo",
+		"body": [
+			"import react, { memo } from 'react';",
+			"import PropTypes from 'prop-types';",
+			"",
+			"const ${1:${TM_FILENAME_BASE}} = memo((props) => {",
+			"\treturn $0",
+			"});",
+			"${1:${TM_FILENAME_BASE}}.propTypes = {",
+			"\t$2",
+			"};",
+			"export default ${1:${TM_FILENAME_BASE}};"
+		],
+		"description": "React memo component"
 	}
 }
