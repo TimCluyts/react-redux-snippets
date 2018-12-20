@@ -29,11 +29,27 @@ contributions or remarks are welcome as we progress to a fixed version.
 
 ### Functions
 
-|        How | What                                   | Alternative keys  |
-| ---------: | -------------------------------------- | ----------------- |
-|     `bind` | React bind functions to 'this' context | -                 |
-| `setstate` | React set state function               | `sets`, `ss`      |
-|     `prop` | React Proptypes definition             | `proptypes`, `pt` |
+|        How | What                                   | Alternative keys                                   |
+| ---------: | -------------------------------------- | -------------------------------------------------- |
+|     `bind` | React bind functions to 'this' context | -                                                  |
+| `setstate` | React set state function               | `sets`, `ss`                                       |
+|     `defp` | React Proptypes definition             | `def`, `defprops`, `dp`, `default`, `defaultprops` |
+|     `prop` | React Proptypes definition             | `proptypes`, `pt`                                  |
+|      `ren` | React render function                  | `render`                                           |
+
+### Redux Functions
+
+|    How | What                               | Alternative keys                                   |
+| -----: | ---------------------------------- | -------------------------------------------------- |
+| `rstp` | Redux function mapStateToProps     | `map`, `mapToProps`, `redux`                       |
+| `rdtp` | Redux function mapDispatchToProps  | `map`, `mapToProps`, `dispatch`, `dispTo`, `redux` |
+| `rbac` | Redux bind actions in one function | `bind`, `binda`, `actionc`, `redux`                |
+
+### Global Functions
+
+|   How | What                                                 | Alternative keys |
+| ----: | ---------------------------------------------------- | ---------------- |
+| `con` | Class constructor calling the super class with props | `constructor`    |
 
 ## Release Notes
 

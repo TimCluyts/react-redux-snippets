@@ -197,5 +197,39 @@
 			"}"
 		],
 		"description": "React Proptypes definition"
+	},
+	"React:Func:DefaultProps": {
+		"prefix": ["defp", "def", "defprop", "dp", "default", "defaultprops"],
+		"body": ["${1:${TM_FILENAME_BASE}}.defaultProps = {", "\t$0", "}"],
+		"description": "React default props definition"
+	},
+	"React:Func:Render": {
+		"prefix": ["ren", "render"],
+		"body": ["render() {", "\treturn (", "\t\t$0", "\t);", "}"],
+		"description": "React render function"
+	},
+
+	"Redux:mapStateToProps": {
+		"prefix": ["rstp", "map", "mapToProps", "redux"],
+		"body": ["function mapStateToProps(state) {", "\treturn $0;", "}"],
+		"description": "Redux function mapStateToProps"
+	},
+
+	"Redux:mapDispatchToProps": {
+		"prefix": ["rdtp", "map", "mapToProps", "dispatch", "dispTo", "redux"],
+		"body": ["function mapDispatchToProps(dispatch) {", "\treturn $0;", "}"],
+		"description": "Redux function mapDispatchToProps"
+	},
+
+	"Redux:bindActionCreators": {
+		"prefix": ["rbac", "bind", "binda", "actionc", "redux"],
+		"body": ["{$1:actions}: bindActionCreators(dispatch, {$2:actions})"],
+		"description": "Redux bind actions in one function"
+	},
+
+	"Global:Class:Constructor": {
+		"prefix": ["con", "constructor"],
+		"body": ["constructor(props) {", "\t super(props);", "\t$0", "}"],
+		"description": "Class constructor calling the super class with props"
 	}
 }
