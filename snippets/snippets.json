@@ -1,4 +1,32 @@
 {
+	"React:Stateless": {
+		"prefix": "rsc",
+		"body": [
+			"import react from 'react';",
+			"",
+			"const ${1:${TM_FILENAME_BASE}} = (props) => {",
+			"\treturn $0",
+			"};",
+			"export default ${1:${TM_FILENAME_BASE}};"
+		],
+		"description": "React stateless component"
+	},
+	"React:Stateless:Proptypes": {
+		"prefix": "rscp",
+		"body": [
+			"import react from 'react';",
+			"import PropTypes from 'prop-types';",
+			"",
+			"const ${1:${TM_FILENAME_BASE}} = (props) => {",
+			"\treturn $0",
+			"};",
+			"${1:${TM_FILENAME_BASE}}.propTypes = {",
+			"\t$2",
+			"};",
+			"export default ${1:${TM_FILENAME_BASE}};"
+		],
+		"description": "React stateless component"
+	},
 	"React:Memo": {
 		"prefix": "memo",
 		"body": [
@@ -11,7 +39,7 @@
 		],
 		"description": "React memo component"
 	},
-	"React:MemoProptypes": {
+	"React:Memo:Proptypes": {
 		"prefix": "memo",
 		"body": [
 			"import react, { memo } from 'react';",
@@ -26,5 +54,42 @@
 			"export default ${1:${TM_FILENAME_BASE}};"
 		],
 		"description": "React memo component"
+	},
+	"React:PureComponent": {
+		"prefix": "pure",
+		"body": [
+			"import react, { PureComponent } from 'react';",
+			"",
+			"class ${1:${TM_FILENAME_BASE}} extends PureComponent {",
+			"\tconstructor() {",
+			"\t\tsuper();",
+			"\t}",
+			"\trender() {",
+			"\t\treturn $0",
+			"\t}",
+			"}",
+			"export default ${1:${TM_FILENAME_BASE}};"
+		],
+		"description": "React pure component"
+	},
+	"React:PureComponent:Proptypes": {
+		"prefix": "pure",
+		"body": [
+			"import react, { PureComponent } from 'react';",
+			"",
+			"class ${1:${TM_FILENAME_BASE}} extends PureComponent {",
+			"\tconstructor() {",
+			"\t\tsuper();",
+			"\t}",
+			"\trender() {",
+			"\t\treturn $0",
+			"\t}",
+			"}",
+			"${1:${TM_FILENAME_BASE}}.propTypes = {",
+			"\t$2",
+			"};",
+			"export default ${1:${TM_FILENAME_BASE}};"
+		],
+		"description": "React pure component with PropTypes"
 	}
 }
