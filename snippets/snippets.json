@@ -12,7 +12,7 @@
 		"description": "React memo component"
 	},
 	"React:Memo:Proptypes": {
-		"prefix": "memo",
+		"prefix": ["memo", "memop"],
 		"body": [
 			"import react, { memo } from 'react';",
 			"import PropTypes from 'prop-types';",

@@ -1,18 +1,19 @@
 # react-snippets README
 
-This is the README for extension "react-snippets".
+## Supported languages
 
-## Features
+- Javascript
+- Javascript React
 
-React code snippets
-
-## Known Issues
-
-Calling out known issues can help limit users opening duplicate issues against
-your extension.
+##Snippets
 
 ## Release Notes
 
 ### 1.0.0
 
 Initial release
+
+|     How | What                                          | Alternative keys |
+| ------: | --------------------------------------------- | ---------------- |
+|  `memo` | Stateless react memo component                | -                |
+| `memop` | Stateless react memo component with proptypes | `memo`           |
