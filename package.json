@@ -1,20 +1,30 @@
 {
-    "name": "react-snippets",
-    "displayName": "react-snippets",
-    "description": "react and redux code snippets",
-    "version": "0.2.0",
-    "engines": {
-        "vscode": "^1.30.0"
-    },
-    "categories": [
-        "Snippets"
-    ],
-    "contributes": {
-        "snippets": [
-            {
-                "language": "javascript",
-                "path": "./snippets/snippets.json"
-            }
-        ]
-    }
+	"author": "timcluyts",
+	"publisher": "timcluyts",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/timcluyts/react-redux-snippets"
+	},
+	"name": "react-snippets",
+	"displayName": "react-snippets",
+	"description": "react and redux code snippets",
+	"version": "0.2.0",
+	"engines": {
+		"vscode": "^1.30.0"
+	},
+	"categories": [
+		"Snippets"
+	],
+	"contributes": {
+		"snippets": [
+			{
+				"language": "javascript",
+				"path": "./snippets/snippets.json"
+			},
+			{
+				"language": "javascriptreact",
+				"path": "./snippets/snippets.json"
+			}
+		]
+	}
 }

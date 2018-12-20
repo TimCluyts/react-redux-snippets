@@ -1,1 +1,14 @@
-{}
+{
+	"React:Memo": {
+		"prefix": "memo",
+		"body": [
+			"import react, { memo } from 'react';",
+			"",
+			"const ${1:${TM_FILENAME_BASE}} = memo((props) => {",
+			"\treturn $0",
+			"});",
+			"export default ${1:${TM_FILENAME_BASE}};"
+		],
+		"description": "React memo component"
+	}
+}
