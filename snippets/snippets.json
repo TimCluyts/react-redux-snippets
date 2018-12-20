@@ -1,32 +1,4 @@
 {
-	"React:Stateless": {
-		"prefix": "rsc",
-		"body": [
-			"import react from 'react';",
-			"",
-			"const ${1:${TM_FILENAME_BASE}} = (props) => {",
-			"\treturn $0",
-			"};",
-			"export default ${1:${TM_FILENAME_BASE}};"
-		],
-		"description": "React stateless component"
-	},
-	"React:Stateless:Proptypes": {
-		"prefix": "rscp",
-		"body": [
-			"import react from 'react';",
-			"import PropTypes from 'prop-types';",
-			"",
-			"const ${1:${TM_FILENAME_BASE}} = (props) => {",
-			"\treturn $0",
-			"};",
-			"${1:${TM_FILENAME_BASE}}.propTypes = {",
-			"\t$2",
-			"};",
-			"export default ${1:${TM_FILENAME_BASE}};"
-		],
-		"description": "React stateless component"
-	},
 	"React:Memo": {
 		"prefix": "memo",
 		"body": [
@@ -54,6 +26,34 @@
 			"export default ${1:${TM_FILENAME_BASE}};"
 		],
 		"description": "React memo component"
+	},
+	"React:Component:Stateless": {
+		"prefix": "rsc",
+		"body": [
+			"import react from 'react';",
+			"",
+			"const ${1:${TM_FILENAME_BASE}} = (props) => {",
+			"\treturn $0",
+			"};",
+			"export default ${1:${TM_FILENAME_BASE}};"
+		],
+		"description": "React stateless component"
+	},
+	"React:Component:Stateless:Proptypes": {
+		"prefix": "rscp",
+		"body": [
+			"import react from 'react';",
+			"import PropTypes from 'prop-types';",
+			"",
+			"const ${1:${TM_FILENAME_BASE}} = (props) => {",
+			"\treturn $0",
+			"};",
+			"${1:${TM_FILENAME_BASE}}.propTypes = {",
+			"\t$2",
+			"};",
+			"export default ${1:${TM_FILENAME_BASE}};"
+		],
+		"description": "React stateless component"
 	},
 	"React:PureComponent": {
 		"prefix": "pure",
@@ -91,5 +91,111 @@
 			"export default ${1:${TM_FILENAME_BASE}};"
 		],
 		"description": "React pure component with PropTypes"
+	},
+	"React:Component": {
+		"prefix": "comp",
+		"body": [
+			"import react, { Component } from 'react';",
+			"",
+			"class ${1:${TM_FILENAME_BASE}} extends PureComponent {",
+			"\tconstructor() {",
+			"\t\tsuper();",
+			"\t}",
+			"\trender() {",
+			"\t\treturn $0",
+			"\t}",
+			"}",
+			"export default ${1:${TM_FILENAME_BASE}};"
+		],
+		"description": "React regular component"
+	},
+	"React:Component:Proptypes": {
+		"prefix": "comp",
+		"body": [
+			"import react, { Component } from 'react';",
+			"",
+			"class ${1:${TM_FILENAME_BASE}} extends PureComponent {",
+			"\tconstructor() {",
+			"\t\tsuper();",
+			"\t}",
+			"\trender() {",
+			"\t\treturn $0",
+			"\t}",
+			"}",
+			"${1:${TM_FILENAME_BASE}}.propTypes = {",
+			"\t$2",
+			"};",
+			"export default ${1:${TM_FILENAME_BASE}};"
+		],
+		"description": "React regular component with PropTypes"
+	},
+	"React:Component:Redux": {
+		"prefix": ["comp", "rcomp", "rrc", "reduxcomp"],
+		"body": [
+			"import react, { Component } from 'react';",
+			"import { connect } from 'react-redux';",
+			"",
+			"class ${1:${TM_FILENAME_BASE}} extends PureComponent {",
+			"\tconstructor() {",
+			"\t\tsuper();",
+			"\t}",
+			"\trender() {",
+			"\t\treturn $0",
+			"\t}",
+			"}",
+			"function mapStateToProps(state) {",
+			"\treturn {",
+			"\t\t$2",
+			"\t}",
+			"}",
+			"export default connect(mapStateToProps)(${1:${TM_FILENAME_BASE}});"
+		],
+		"description": "React regular component"
+	},
+	"React:Component:Redux:Proptypes": {
+		"prefix": ["comp", "rcomp", "rcompp", "rrc", "rrcp", "reduxcomp"],
+		"body": [
+			"import react, { Component } from 'react';",
+			"import { connect } from 'react-redux';",
+			"",
+			"class ${1:${TM_FILENAME_BASE}} extends PureComponent {",
+			"\tconstructor() {",
+			"\t\tsuper();",
+			"\t}",
+			"\trender() {",
+			"\t\treturn $0",
+			"\t}",
+			"}",
+			"function mapStateToProps(state) {",
+			"\treturn {",
+			"\t\t$2",
+			"\t}",
+			"}",
+			"${1:${TM_FILENAME_BASE}}.propTypes = {",
+			"\t$3",
+			"};",
+			"export default ${1:${TM_FILENAME_BASE}};"
+		],
+		"description": "React regular component with PropTypes"
+	},
+
+	"React:Func:Bind": {
+		"prefix": ["bind"],
+		"body": ["this.$1 = this.$1.bind(this);"],
+		"description": "React bind functions to 'this' context"
+	},
+	"React:Func:SetState": {
+		"prefix": ["setState", "sets", "ss"],
+		"body": ["this.setState({ $1: $2 });"],
+		"description": "React set state function"
+	},
+	"React:Func:PropTypes": {
+		"prefix": ["proptypes", "prop", "pt"],
+		"body": [
+			"${1:${TM_FILENAME_BASE}}.propTypes = {",
+			"\t$2: PropTypes.$3",
+			"}"
+		],
+		"description": "React Proptypes definition"
 	}
 }
