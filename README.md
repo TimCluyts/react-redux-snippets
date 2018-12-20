@@ -53,6 +53,6 @@ contributions or remarks are welcome as we progress to a fixed version.
 
 ## Release Notes
 
-### 0.2.0
+### 0.3.1
 
 Initial release
