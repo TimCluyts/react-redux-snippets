@@ -1,5 +1,10 @@
 # react-snippets README
 
+## Note
+
+React code snippets is still under development and will change regularly! Any
+contributions or remarks are welcome as we progress to a fixed version.
+
 ## Supported languages
 
 - Javascript
