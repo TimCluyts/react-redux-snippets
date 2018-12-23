@@ -94,21 +94,7 @@ contributions or remarks are welcome as we progress to a fixed version.
 | `foreach` | Foreach loop                                         | `feach`          |
 |     `map` | Map loop                                             | -                |
 
-## Release Notes
+For questions or to request additions, changes and so on, please open an issue
+on the [Github page][github].
 
-### 0.3.5
-
-#### Removed
-
-- removed old vsix files
-
-### 0.3.3
-
-#### Added
-
-- Support for typescript
-- Changelog
-
-### 0.3.2
-
-Added proptypes for validation
+[github]: https://github.com/timcluyts/react-redux-snippets
