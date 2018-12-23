@@ -88,6 +88,13 @@ contributions or remarks are welcome as we progress to a fixed version.
 
 ## Release Notes
 
+### 0.3.3
+
+#### Added
+
+- Support for typescript
+- Changelog
+
 ### 0.3.2
 
 Added proptypes for validation
