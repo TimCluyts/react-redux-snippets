@@ -209,8 +209,201 @@
 		"description": "React render function"
 	},
 
+	"React:PropTypes:Number": {
+		"prefix": ["prop", "propn", "propnumber", "number"],
+		"body": ["PropTypes.number,"],
+		"description": "React PropType Number"
+	},
+
+	"React:PropTypes:Number:Required": {
+		"prefix": ["prop", "propn", "propr", "propnumber", "number"],
+		"body": ["PropTypes.number.isRequired,"],
+		"description": "React PropType Number Required"
+	},
+
+	"React:PropTypes:String": {
+		"prefix": ["prop", "props", "propstring", "string"],
+		"body": ["PropTypes.string,"],
+		"description": "React PropType String"
+	},
+
+	"React:PropTypes:Number:Required": {
+		"prefix": ["prop", "props", "propr", "propstring", "string"],
+		"body": ["PropTypes.string.isRequired,"],
+		"description": "React PropType String Required"
+	},
+
+	"React:PropTypes:Array": {
+		"prefix": ["prop", "propa", "proparray", "array"],
+		"body": ["PropTypes.array,"],
+		"description": "React PropType Array"
+	},
+
+	"React:PropTypes:Array:Required": {
+		"prefix": ["prop", "propa", "propr", "proparray", "array"],
+		"body": ["PropTypes.array.isRequired,"],
+		"description": "React PropType Array Required"
+	},
+
+	"React:PropTypes:Bool": {
+		"prefix": ["prop", "propb", "propbool", "bool"],
+		"body": ["PropTypes.bool,"],
+		"description": "React PropType Boolean"
+	},
+	"React:PropTypes:Bool:Required": {
+		"prefix": ["prop", "propb", "propr", "propbool", "bool"],
+		"body": ["PropTypes.bool.isRequired,"],
+		"description": "React PropType Boolean Required"
+	},
+
+	"React:PropTypes:Object": {
+		"prefix": ["prop", "propo", "propobject", "object"],
+		"body": ["PropTypes.object,"],
+		"description": "React PropType Object"
+	},
+
+	"React:PropTypes:Object:Required": {
+		"prefix": ["prop", "propo", "propr", "propobject", "object"],
+		"body": ["PropTypes.object.isRequired,"],
+		"description": "React PropType Object Required"
+	},
+
+	"React:PropTypes:Function": {
+		"prefix": ["prop", "propf", "propfunc", "func"],
+		"body": ["PropTypes.func,"],
+		"description": "React PropType Function"
+	},
+
+	"React:PropTypes:Function:Required": {
+		"prefix": ["prop", "propf", "propr", "propfunc", "func"],
+		"body": ["PropTypes.func.isRequired,"],
+		"description": "React PropType Function Required"
+	},
+
+	"React:PropTypes:Symbol": {
+		"prefix": ["prop", "props", "propsymbol", "symbol"],
+		"body": ["PropTypes.symbol,"],
+		"description": "React PropType Symbol"
+	},
+
+	"React:PropTypes:Symbol:Required": {
+		"prefix": ["prop", "props", "propr", "propsymbol", "symbol"],
+		"body": ["PropTypes.symbol.isRequired,"],
+		"description": "React PropType Symbol Required"
+	},
+
+	"React:PropTypes:Node": {
+		"prefix": ["prop", "propn", "propnode", "node"],
+		"body": ["PropTypes.node,"],
+		"description": "React PropType Node"
+	},
+
+	"React:PropTypes:Node:Required": {
+		"prefix": ["prop", "propn", "propr", "propnode", "node"],
+		"body": ["PropTypes.node.isRequired,"],
+		"description": "React PropType Node Required"
+	},
+
+	"React:PropTypes:Element": {
+		"prefix": ["prop", "prope", "propelement", "element"],
+		"body": ["PropTypes.element,"],
+		"description": "React PropType Element"
+	},
+
+	"React:PropTypes:Element:Required": {
+		"prefix": ["prop", "prope", "propr", "propelement", "element"],
+		"body": ["PropTypes.element.isRequired,"],
+		"description": "React PropType Element Required"
+	},
+
+	"React:PropTypes:InstanceOf": {
+		"prefix": ["prop", "propi", "propinstance", "instance", "instanceof"],
+		"body": ["PropTypes.instanceOf($1),"],
+		"description": "React PropType InstanceOf"
+	},
+
+	"React:PropTypes:InstanceOf:Required": {
+		"prefix": [
+			"prop",
+			"propi",
+			"propr",
+			"propinstance",
+			"instance",
+			"instanceof"
+		],
+		"body": ["PropTypes.instanceOf($1).isRequired,"],
+		"description": "React PropType InstanceOf Required"
+	},
+
+	"React:PropTypes:OneOf": {
+		"prefix": ["prop", "propone", "proponeof", "one", "oneof"],
+		"body": ["PropTypes.oneOf([$1]),"],
+		"description": "React PropType OneOf"
+	},
+
+	"React:PropTypes:OneOf:Required": {
+		"prefix": ["prop", "propone", "propr", "proponeof", "one", "oneof"],
+		"body": ["PropTypes.oneOf([$1]).isRequired,"],
+		"description": "React PropType OneOf Required"
+	},
+
+	"React:PropTypes:OneOfType": {
+		"prefix": ["prop", "proponetype", "proponeoftype", "onetype", "oneoftype"],
+		"body": ["PropTypes.oneOfType([$1]),"],
+		"description": "React PropType OneOfType"
+	},
+
+	"React:PropTypes:OneOfType:Required": {
+		"prefix": [
+			"prop",
+			"proponetype",
+			"propr",
+			"proponeoftype",
+			"onetype",
+			"oneoftype"
+		],
+		"body": ["PropTypes.oneOfType([$1]).isRequired,"],
+		"description": "React PropType OneOfType Required"
+	},
+
+	"React:PropTypes:ArrayOf": {
+		"prefix": ["prop", "propa", "proparrayof", "arrayof", "array"],
+		"body": ["PropTypes.arrayOf($1),"],
+		"description": "React PropType ArrayOf"
+	},
+
+	"React:PropTypes:ArrayOf:Required": {
+		"prefix": ["prop", "propa", "proparrayof", "arrayof", "propr", "array"],
+		"body": ["PropTypes.arrayOf($1).isRequired,"],
+		"description": "React PropType ArrayOf Required"
+	},
+
+	"React:PropTypes:ObjectOf": {
+		"prefix": ["prop", "propo", "propobjectof", "objectof", "object"],
+		"body": ["PropTypes.objectOf($1),"],
+		"description": "React PropType ObjectOf"
+	},
+
+	"React:PropTypes:ObjectOf:Required": {
+		"prefix": ["prop", "propo", "propobjectof", "objectof", "propr", "object"],
+		"body": ["PropTypes.objectOf($1).isRequired,"],
+		"description": "React PropType ObjectOf Required"
+	},
+
+	"React:PropTypes:Shape": {
+		"prefix": ["prop", "propsh", "propshape", "shape"],
+		"body": ["PropTypes.shape({", "\t$1", "}),"],
+		"description": "React PropType Shape"
+	},
+
+	"React:PropTypes:Shape:Required": {
+		"prefix": ["prop", "propsh", "propshape", "shape", "propr"],
+		"body": ["PropTypes.shape({", "\t$1", "}).isRequired,"],
+		"description": "React PropType Shape Required"
+	},
+
 	"Redux:mapStateToProps": {
-		"prefix": ["rstp", "map", "mapToProps", "redux"],
+		"prefix": ["rstp", "map", "mapToProps", "redux", "propsTo"],
 		"body": ["function mapStateToProps(state) {", "\treturn $0;", "}"],
 		"description": "Redux function mapStateToProps"
 	},
