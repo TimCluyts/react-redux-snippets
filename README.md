@@ -88,6 +88,6 @@ contributions or remarks are welcome as we progress to a fixed version.
 
 ## Release Notes
 
-### 0.3.1
+### 0.3.2
 
-Initial release
+Added proptypes for validation
