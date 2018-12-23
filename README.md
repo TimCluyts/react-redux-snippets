@@ -9,6 +9,8 @@ contributions or remarks are welcome as we progress to a fixed version.
 
 - Javascript
 - Javascript React
+- Typescript
+- Typescript React
 
 ## Snippets
 
@@ -82,9 +84,15 @@ contributions or remarks are welcome as we progress to a fixed version.
 
 ### Global Functions
 
-|   How | What                                                 | Alternative keys |
-| ----: | ---------------------------------------------------- | ---------------- |
-| `con` | Class constructor calling the super class with props | `constructor`    |
+|       How | What                                                 | Alternative keys |
+| --------: | ---------------------------------------------------- | ---------------- |
+|     `con` | Class constructor calling the super class with props | `constructor`    |
+|     `imp` | Import default module                                | `import`         |
+|    `impa` | Import module as alias                               | `imp`, `import`  |
+|   `forof` | Loop over object keys                                | `fof`            |
+|   `forin` | Loop over object values                              | `fin`            |
+| `foreach` | Foreach loop                                         | `feach`          |
+|     `map` | Map loop                                             | -                |
 
 ## Release Notes
 
