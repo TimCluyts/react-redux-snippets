@@ -6,6 +6,12 @@ file.
 Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how
 to structure this file.
 
+## [0.3.5] - 2018-12-23
+
+### Removed
+
+- removed old vsix files
+
 ## [0.3.3] - 2018-12-23
 
 ### Added

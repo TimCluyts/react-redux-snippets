@@ -88,6 +88,12 @@ contributions or remarks are welcome as we progress to a fixed version.
 
 ## Release Notes
 
+### 0.3.5
+
+#### Removed
+
+- removed old vsix files
+
 ### 0.3.3
 
 #### Added
