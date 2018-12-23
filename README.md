@@ -33,7 +33,7 @@ contributions or remarks are welcome as we progress to a fixed version.
 | ---------: | -------------------------------------- | -------------------------------------------------- |
 |     `bind` | React bind functions to 'this' context | -                                                  |
 | `setstate` | React set state function               | `sets`, `ss`                                       |
-|     `defp` | React Proptypes definition             | `def`, `defprops`, `dp`, `default`, `defaultprops` |
+|     `defp` | React default props definition         | `def`, `defprops`, `dp`, `default`, `defaultprops` |
 |     `prop` | React Proptypes definition             | `proptypes`, `pt`                                  |
 |      `ren` | React render function                  | `render`                                           |
 
