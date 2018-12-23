@@ -39,38 +39,38 @@ contributions or remarks are welcome as we progress to a fixed version.
 
 ### PropTypes
 
-|          How | What                               | Alternative keys                                        |
-| -----------: | ---------------------------------- | ------------------------------------------------------- |
-|     `number` | React PropType Number              | `prop`,`propn`,`propnumber`                             |
-|     `number` | React PropType Number Required     | `prop`,`propn`,`propnumber`, `propr`                    |
-|     `string` | React PropType String              | `prop`,`props`,`propstring`                             |
-|     `string` | React PropType String Required     | `prop`,`props`,`propstring`, `propr`                    |
-|      `array` | React PropType Array               | `prop`,`propa`,`proparray`                              |
-|      `array` | React PropType Array Required      | `prop`,`propa`,`proparray`, `propr`                     |
-|       `bool` | React PropType Bool                | `prop`,`propb`,`propbool`                               |
-|       `bool` | React PropType Bool Required       | `prop`,`propb`,`propbool`, `propr`                      |
-|     `object` | React PropType Object              | `prop`,`propo`,`propobject`                             |
-|     `object` | React PropType Object Required     | `prop`,`propo`,`propobject`, `propr`                    |
-|       `func` | React PropType Function            | `prop`,`propf`,`propfunc`                               |
-|       `func` | React PropType Function Required   | `prop`,`propf`,`propfunc`, `propr`                      |
-|     `symbol` | React PropType Symbol              | `prop`,`props`,`propsymbol`                             |
-|     `symbol` | React PropType Symbol Required     | `prop`,`props`,`propsymbol`, `propr`                    |
-|       `node` | React PropType Node                | `prop`,`propn`,`propnode`                               |
-|       `node` | React PropType Node Required       | `prop`,`propn`,`propnode`, `propr`                      |
-|    `element` | React PropType Element             | `prop`,`prope`,`propelement`                            |
-|    `element` | React PropType Element Required    | `prop`,`prope`,`propelement`, `propr`                   |
-| `instanceof` | React PropType InstanceOf          | `prop`,`propi`,`propinstance`, `instance`               |
-| `instanceof` | React PropType InstanceOf Required | `prop`,`propi`,`propinstance`, `instance`, `propr`      |
-|      `oneof` | React PropType OneOf               | `prop`,`propone`,`proponeof`, `one`                     |
-|      `oneof` | React PropType OneOf Required      | `prop`,`propone`,`proponeof`, `one` `propr`             |
-|  `oneoftype` | React PropType OneOf               | `prop`,`proponetype`,`proponeoftype`, `onetype`         |
-|  `oneoftype` | React PropType OneOf Required      | `prop`,`proponetype`,`proponeoftype`, `onetype` `propr` |
-|    `arrayof` | React PropType ArrayOf             | `prop`,`propa`,`proparrayof`, `array`                   |
-|    `arrayof` | React PropType ArrayOf Required    | `prop`,`propa`,`proparrayof`, `array`, `propr`          |
-|   `objectof` | React PropType ObjectOf            | `prop`,`propo`,`propobjectof`, `object`                 |
-|   `objectof` | React PropType ObjectOf Required   | `prop`,`propo`,`propobjectof`, `object` , `propr`       |
-|      `shape` | React PropType Shape               | `prop`,`propsh`,`propshape`                             |
-|      `shape` | React PropType Shape Required      | `prop`,`propsh`,`propshape` , `propr`                   |
+|          How | What                               | Alternative keys                                          |
+| -----------: | ---------------------------------- | --------------------------------------------------------- |
+|     `number` | React PropType Number              | `prop`, `propn`, `propnumber`                             |
+|     `number` | React PropType Number Required     | `prop`, `propn`, `propnumber`, `propr`                    |
+|     `string` | React PropType String              | `prop`, `props`, `propstring`                             |
+|     `string` | React PropType String Required     | `prop`, `props`, `propstring`, `propr`                    |
+|      `array` | React PropType Array               | `prop`, `propa`, `proparray`                              |
+|      `array` | React PropType Array Required      | `prop`, `propa`, `proparray`, `propr`                     |
+|       `bool` | React PropType Bool                | `prop`, `propb`, `propbool`                               |
+|       `bool` | React PropType Bool Required       | `prop`, `propb`, `propbool`, `propr`                      |
+|     `object` | React PropType Object              | `prop`, `propo`, `propobject`                             |
+|     `object` | React PropType Object Required     | `prop`, `propo`, `propobject`, `propr`                    |
+|       `func` | React PropType Function            | `prop`, `propf`, `propfunc`                               |
+|       `func` | React PropType Function Required   | `prop`, `propf`, `propfunc`, `propr`                      |
+|     `symbol` | React PropType Symbol              | `prop`, `props`, `propsymbol`                             |
+|     `symbol` | React PropType Symbol Required     | `prop`, `props`, `propsymbol`, `propr`                    |
+|       `node` | React PropType Node                | `prop`, `propn`, `propnode`                               |
+|       `node` | React PropType Node Required       | `prop`, `propn`, `propnode`, `propr`                      |
+|    `element` | React PropType Element             | `prop`, `prope`, `propelement`                            |
+|    `element` | React PropType Element Required    | `prop`, `prope`, `propelement`, `propr`                   |
+| `instanceof` | React PropType InstanceOf          | `prop`, `propi`, `propinstance`, `instance`               |
+| `instanceof` | React PropType InstanceOf Required | `prop`, `propi`, `propinstance`, `instance`, `propr`      |
+|      `oneof` | React PropType OneOf               | `prop`, `propone`, `proponeof`, `one`                     |
+|      `oneof` | React PropType OneOf Required      | `prop`, `propone`, `proponeof`, `one` `propr`             |
+|  `oneoftype` | React PropType OneOf               | `prop`, `proponetype`, `proponeoftype`, `onetype`         |
+|  `oneoftype` | React PropType OneOf Required      | `prop`, `proponetype`, `proponeoftype`, `onetype` `propr` |
+|    `arrayof` | React PropType ArrayOf             | `prop`, `propa`, `proparrayof`, `array`                   |
+|    `arrayof` | React PropType ArrayOf Required    | `prop`, `propa`, `proparrayof`, `array`, `propr`          |
+|   `objectof` | React PropType ObjectOf            | `prop`, `propo`, `propobjectof`, `object`                 |
+|   `objectof` | React PropType ObjectOf Required   | `prop`, `propo`, `propobjectof`, `object` , `propr`       |
+|      `shape` | React PropType Shape               | `prop`, `propsh`, `propshape`                             |
+|      `shape` | React PropType Shape Required      | `prop`, `propsh`, `propshape` , `propr`                   |
 
 ### Redux Functions
 
