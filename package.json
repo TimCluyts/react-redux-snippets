@@ -6,11 +6,12 @@
 		"url": "https://github.com/timcluyts/react-redux-snippets"
 	},
 	"name": "react-snippets",
-	"displayName": "react-snippets",
+	"displayName": "react-redux-snippets",
+	"icon": "icons/react.png",
 	"description": "react and redux code snippets",
 	"version": "0.3.2",
 	"engines": {
-		"vscode": "^1.30.0"
+		"vscode": "^0.10.0"
 	},
 	"categories": [
 		"Snippets"
@@ -23,6 +24,14 @@
 			},
 			{
 				"language": "javascriptreact",
+				"path": "./snippets/snippets.json"
+			},
+			{
+				"language": "typescript",
+				"path": "./snippets/snippets.json"
+			},
+			{
+				"language": "typescriptreact",
 				"path": "./snippets/snippets.json"
 			}
 		]
