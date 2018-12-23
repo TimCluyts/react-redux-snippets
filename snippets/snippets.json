@@ -211,84 +211,84 @@
 
 	"React:PropTypes:Number": {
 		"prefix": ["prop", "propn", "propnumber", "number"],
-		"body": ["$1:PropTypes.number"],
+		"body": ["PropTypes.number,"],
 		"description": "React PropType Number"
 	},
 
 	"React:PropTypes:Number:Required": {
 		"prefix": ["prop", "propn", "propr", "propnumber", "number"],
-		"body": ["$1:PropTypes.number.isRequired"],
+		"body": ["PropTypes.number.isRequired,"],
 		"description": "React PropType Number Required"
 	},
 
 	"React:PropTypes:String": {
 		"prefix": ["prop", "props", "propstring", "string"],
-		"body": ["$1:PropTypes.string"],
+		"body": ["PropTypes.string,"],
 		"description": "React PropType String"
 	},
 
 	"React:PropTypes:Number:Required": {
 		"prefix": ["prop", "props", "propr", "propstring", "string"],
-		"body": ["$1:PropTypes.string.isRequired"],
+		"body": ["PropTypes.string.isRequired,"],
 		"description": "React PropType String Required"
 	},
 
 	"React:PropTypes:Array": {
 		"prefix": ["prop", "propa", "proparray", "array"],
-		"body": ["$1:PropTypes.array"],
+		"body": ["PropTypes.array,"],
 		"description": "React PropType Array"
 	},
 
 	"React:PropTypes:Array:Required": {
 		"prefix": ["prop", "propa", "propr", "proparray", "array"],
-		"body": ["$1:PropTypes.array"],
+		"body": ["PropTypes.array.isRequired,"],
 		"description": "React PropType Array Required"
 	},
 
 	"React:PropTypes:Bool": {
 		"prefix": ["prop", "propb", "propbool", "bool"],
-		"body": ["$1:PropTypes.bool"],
+		"body": ["PropTypes.bool,"],
 		"description": "React PropType Boolean"
 	},
 	"React:PropTypes:Bool:Required": {
 		"prefix": ["prop", "propb", "propr", "propbool", "bool"],
-		"body": ["$1:PropTypes.bool"],
+		"body": ["PropTypes.bool.isRequired,"],
 		"description": "React PropType Boolean Required"
 	},
 
 	"React:PropTypes:Object": {
 		"prefix": ["prop", "propo", "propobject", "object"],
-		"body": ["$1:PropTypes.object"],
+		"body": ["PropTypes.object,"],
 		"description": "React PropType Object"
 	},
 
 	"React:PropTypes:Object:Required": {
 		"prefix": ["prop", "propo", "propr", "propobject", "object"],
-		"body": ["$1:PropTypes.object"],
+		"body": ["PropTypes.object.isRequired,"],
 		"description": "React PropType Object Required"
 	},
 
 	"React:PropTypes:Function": {
 		"prefix": ["prop", "propf", "propfunc", "func"],
-		"body": ["$1:PropTypes.func"],
+		"body": ["PropTypes.func,"],
 		"description": "React PropType Function"
 	},
 
 	"React:PropTypes:Function:Required": {
 		"prefix": ["prop", "propf", "propr", "propfunc", "func"],
-		"body": ["$1:PropTypes.func"],
+		"body": ["PropTypes.func.isRequired,"],
 		"description": "React PropType Function Required"
 	},
 
 	"React:PropTypes:Symbol": {
 		"prefix": ["prop", "props", "propsymbol", "symbol"],
-		"body": ["$1:PropTypes.symbol"],
+		"body": ["PropTypes.symbol,"],
 		"description": "React PropType Symbol"
 	},
 
 	"React:PropTypes:Symbol:Required": {
 		"prefix": ["prop", "props", "propr", "propsymbol", "symbol"],
-		"body": ["$1:PropTypes.symbol"],
+		"body": ["PropTypes.symbol.isRequired,"],
 		"description": "React PropType Symbol Required"
 	},
 
