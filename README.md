@@ -19,15 +19,15 @@ contributions or remarks are welcome as we progress to a fixed version.
 |      How | What                                             | Alternative keys                            |
 | -------: | ------------------------------------------------ | ------------------------------------------- |
 |   `memo` | Stateless react memo component                   | -                                           |
-|  `memop` | Stateless react memo component with proptypes    | `memo`                                      |
-|    `rsc` | Stateless react component                        | `comp`                                      |
-|   `rscp` | Stateless react component                        | `comp`, `rsc`                               |
+|  `memop` | Stateless react memo component with PropTypes    | `memo`                                      |
+|    `rsc` | Stateless react component                        | `comp`, `stateless`                         |
+|   `rscp` | Stateless react component with PropTypes         | `comp`, `rsc`, `stateless`                  |
 |   `pure` | Pure component react                             | -                                           |
-|  `purep` | Pure component react with proptypes              | `pure`                                      |
+|  `purep` | Pure component react with PropTypes              | `pure`                                      |
 |  `compo` | Regular react component                          | `comp`                                      |
-|  `compp` | Regular react component with proptypes           | `comp`                                      |
+|  `compp` | Regular react component with PropTypes           | `comp`                                      |
 |  `rcomp` | Regular react component with redux               | `comp`, `rrc`, `reduxcomp`                  |
-| `rcompp` | Regular react component with redux and proptypes | `comp`, `rcomp`, `rrc`, `rrcp`, `reduxcomp` |
+| `rcompp` | Regular react component with redux and PropTypes | `comp`, `rcomp`, `rrc`, `rrcp`, `reduxcomp` |
 
 ### Functions
 
@@ -36,7 +36,7 @@ contributions or remarks are welcome as we progress to a fixed version.
 |     `bind` | React bind functions to 'this' context | -                                                  |
 | `setstate` | React set state function               | `sets`, `ss`                                       |
 |     `defp` | React default props definition         | `def`, `defprops`, `dp`, `default`, `defaultprops` |
-|     `prop` | React Proptypes definition             | `proptypes`, `pt`                                  |
+|     `prop` | React PropTypes definition             | `proptypes`, `pt`                                  |
 |      `ren` | React render function                  | `render`                                           |
 
 ### PropTypes
