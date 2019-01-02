@@ -28,7 +28,7 @@
 		"description": "React memo component"
 	},
 	"React:Component:Stateless": {
-		"prefix": ["comp", "rsc"],
+		"prefix": ["comp", "rsc", "stateless"],
 		"body": [
 			"import react from 'react';",
 			"",
@@ -40,7 +40,7 @@
 		"description": "React stateless component"
 	},
 	"React:Component:Stateless:Proptypes": {
-		"prefix": ["comp", "rsc", "rscp"],
+		"prefix": ["comp", "rsc", "rscp", "stateless"],
 		"body": [
 			"import react from 'react';",
 			"import PropTypes from 'prop-types';",
@@ -53,7 +53,7 @@
 			"};",
 			"export default ${1:${TM_FILENAME_BASE}};"
 		],
-		"description": "React stateless component"
+		"description": "React stateless component with PropTypes"
 	},
 	"React:PureComponent": {
 		"prefix": "pure",
@@ -424,5 +424,41 @@
 		"prefix": ["con", "constructor"],
 		"body": ["constructor(props) {", "\t super(props);", "\t$0", "}"],
 		"description": "Class constructor calling the super class with props"
+	},
+
+	"Global:Import:Module": {
+		"prefix": ["imp", "import"],
+		"body": ["import ${1:name} from '${2:module}';$0"],
+		"description": "Import default module"
+	},
+
+	"Global:Import:Alias": {
+		"prefix": ["imp", "impa", "import"],
+		"body": ["import { ${1:original} as ${2:alias} }  from '${3:module}';$0"],
+		"description": "Import module as alias"
+	},
+
+	"Global:For:Of": {
+		"prefix": ["forof", "fof"],
+		"body": ["for(let ${1:item} of ${2:object}) {", "\t$0", "}"],
+		"description": "Loop over object keys"
+	},
+
+	"Global:For:In": {
+		"prefix": ["forin", "fin"],
+		"body": ["for(let ${1:item} in ${2:object}) {", "\t$0", "}"],
+		"description": "Loop over object values"
+	},
+
+	"Global:ForEach": {
+		"prefix": ["foreach", "feach"],
+		"body": ["${1:array}.forEach((${2:item(s)}) => {", "\t$0", "});"],
+		"description": "Foreach loop over array"
+	},
+
+	"Global:Map": {
+		"prefix": ["map"],
+		"body": ["${1:array}.map((${2:item(s)}) => {", "\treturn $0", "});"],
+		"description": "Map array loop"
 	}
 }

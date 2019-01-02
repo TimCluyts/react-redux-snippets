@@ -3,6 +3,13 @@
 All notable changes to the "react-redux-snippets" extension will be documented
 in this file.
 
+## [0.3.6] - 2019-01-02
+
+### Added
+
+- Import default module
+- For methods (For of, For in, For each, map)
+
 ## [0.3.5] - 2018-12-23
 
 ### Removed

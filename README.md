@@ -9,6 +9,8 @@ contributions or remarks are welcome as we progress to a fixed version.
 
 - Javascript
 - Javascript React
+- Typescript
+- Typescript React
 
 ## Snippets
 
@@ -17,15 +19,15 @@ contributions or remarks are welcome as we progress to a fixed version.
 |      How | What                                             | Alternative keys                            |
 | -------: | ------------------------------------------------ | ------------------------------------------- |
 |   `memo` | Stateless react memo component                   | -                                           |
-|  `memop` | Stateless react memo component with proptypes    | `memo`                                      |
-|    `rsc` | Stateless react component                        | `comp`                                      |
-|   `rscp` | Stateless react component                        | `comp`, `rsc`                               |
+|  `memop` | Stateless react memo component with PropTypes    | `memo`                                      |
+|    `rsc` | Stateless react component                        | `comp`, `stateless`                         |
+|   `rscp` | Stateless react component with PropTypes         | `comp`, `rsc`, `stateless`                  |
 |   `pure` | Pure component react                             | -                                           |
-|  `purep` | Pure component react with proptypes              | `pure`                                      |
+|  `purep` | Pure component react with PropTypes              | `pure`                                      |
 |  `compo` | Regular react component                          | `comp`                                      |
-|  `compp` | Regular react component with proptypes           | `comp`                                      |
+|  `compp` | Regular react component with PropTypes           | `comp`                                      |
 |  `rcomp` | Regular react component with redux               | `comp`, `rrc`, `reduxcomp`                  |
-| `rcompp` | Regular react component with redux and proptypes | `comp`, `rcomp`, `rrc`, `rrcp`, `reduxcomp` |
+| `rcompp` | Regular react component with redux and PropTypes | `comp`, `rcomp`, `rrc`, `rrcp`, `reduxcomp` |
 
 ### Functions
 
@@ -34,7 +36,7 @@ contributions or remarks are welcome as we progress to a fixed version.
 |     `bind` | React bind functions to 'this' context | -                                                  |
 | `setstate` | React set state function               | `sets`, `ss`                                       |
 |     `defp` | React default props definition         | `def`, `defprops`, `dp`, `default`, `defaultprops` |
-|     `prop` | React Proptypes definition             | `proptypes`, `pt`                                  |
+|     `prop` | React PropTypes definition             | `proptypes`, `pt`                                  |
 |      `ren` | React render function                  | `render`                                           |
 
 ### PropTypes
@@ -82,25 +84,17 @@ contributions or remarks are welcome as we progress to a fixed version.
 
 ### Global Functions
 
-|   How | What                                                 | Alternative keys |
-| ----: | ---------------------------------------------------- | ---------------- |
-| `con` | Class constructor calling the super class with props | `constructor`    |
+|       How | What                                                 | Alternative keys |
+| --------: | ---------------------------------------------------- | ---------------- |
+|     `con` | Class constructor calling the super class with props | `constructor`    |
+|     `imp` | Import default module                                | `import`         |
+|    `impa` | Import module as alias                               | `imp`, `import`  |
+|   `forof` | Loop over object keys                                | `fof`            |
+|   `forin` | Loop over object values                              | `fin`            |
+| `foreach` | Foreach loop                                         | `feach`          |
+|     `map` | Map loop                                             | -                |
 
-## Release Notes
+For questions or to request additions, changes and so on, please open an issue
+on the [Github page][github].
 
-### 0.3.5
-
-#### Removed
-
-- removed old vsix files
-
-### 0.3.3
-
-#### Added
-
-- Support for typescript
-- Changelog
-
-### 0.3.2
-
-Added proptypes for validation
+[github]: https://github.com/timcluyts/react-redux-snippets
