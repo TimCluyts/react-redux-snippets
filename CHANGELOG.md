@@ -3,6 +3,12 @@
 All notable changes to the "react-redux-snippets" extension will be documented
 in this file.
 
+## [0.3.7] - 2019-01-02
+
+### Added
+
+- Added lifecycle methods
+
 ## [0.3.6] - 2019-01-02
 
 ### Added

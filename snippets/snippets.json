@@ -208,6 +208,62 @@
 		"body": ["render() {", "\treturn (", "\t\t$0", "\t);", "}"],
 		"description": "React render function"
 	},
+	"React:Func:GetDerivedStateFromProps": {
+		"prefix": ["derived", "getderived", "gdsfp", "life", "lifecycle"],
+		"body": [
+			"static getDerivedStateFromProps(nextProps, prevState) {",
+			"\treturn $0;",
+			"}"
+		],
+		"description": "Called when state depends on changes in props over time"
+	},
+	"React:Func:ShouldComponentUpdate": {
+		"prefix": ["shouldcomponent", "should", "scu", "life", "lifecycle"],
+		"body": [
+			"shouldComponentUpdate(nextProps, nextState) {",
+			"\treturn $0;",
+			"}"
+		],
+		"description": "Returns false to skip rendering"
+	},
+	"React:Func:GetSnapshotBeforeUpdate": {
+		"prefix": ["getsnapshot", "snapshot", "snap", "life", "lifecycle"],
+		"body": [
+			"getSnapshotBeforeUpdate(prevProps, prevState) {",
+			"\treturn $0;",
+			"}"
+		],
+		"description": "Returns a snapshot or should return null"
+	},
+
+	"React:Func:GetSnapshotBeforeUpdateComponentDidUpdate": {
+		"prefix": ["getsnapshot", "snapshot", "snap", "life", "lifecycle"],
+		"body": [
+			"getSnapshotBeforeUpdate(prevProps, prevState) {",
+			"\treturn $1;",
+			"}",
+			"",
+			"componentDidUpdate(prevProps, prevState, snapshot) {",
+			"\t$0;",
+			"}"
+		],
+		"description": "Returns a snapshot and pass it to ComponentDidUpdate"
+	},
+	"React:Func:ComponentDidMount": {
+		"prefix": ["didmount", "life", "lifecycle"],
+		"body": ["componentDidMount() {", "\treturn $0;", "}"],
+		"description": "Called right after mounting the component"
+	},
+	"React:Func:ComponentDidUpdate": {
+		"prefix": ["didupdate", "life", "lifecycle"],
+		"body": ["componentDidUpdate(prevProps, prevState) {", "\t$0;", "}"],
+		"description": "Called whenever a component will be updated"
+	},
+	"React:Func:ComponentWillUnmount": {
+		"prefix": ["willunmount", "unmount", "life", "lifecycle"],
+		"body": ["componentWillUnmount() {", "\t$0;", "}"],
+		"description": "Called when component is being removed from the dom"
+	},
 
 	"React:PropTypes:Number": {
 		"prefix": ["prop", "propn", "propnumber", "number"],
