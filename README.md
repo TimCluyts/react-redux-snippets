@@ -39,6 +39,18 @@ contributions or remarks are welcome as we progress to a fixed version.
 |     `prop` | React PropTypes definition             | `proptypes`, `pt`                                  |
 |      `ren` | React render function                  | `render`                                           |
 
+### Lifecycle methods
+
+|               How | What                                                    | Alternative keys                           |
+| ----------------: | ------------------------------------------------------- | ------------------------------------------ |
+|      `getderived` | Called when state depends on changes in props over time | `derived`, `gdsfp`, `life`, `lifecycle`    |
+| `shouldcomponent` | Returns false to skip rendering                         | `should`, `scu`, `life`, `lifecycle`       |
+|        `snapshot` | Returns a snapshot or should return null                | `getsnapshot`, `snap`, `life`, `lifecycle` |
+|        `snapshot` | Returns a snapshot and pass it to ComponentDidUpdate    | `getsnapshot`, `snap`, `life`, `lifecycle` |
+|        `didmount` | Called right after mounting the component               | `life`, `lifecycle`                        |
+|       `didupdate` | Called whenever a component will be updated             | `life`, `lifecycle`                        |
+|     `willunmount` | Called when component is being removed from the dom     | `unmount`, `life`, `lifecycle`             |
+
 ### PropTypes
 
 |          How | What                               | Alternative keys                                          |
