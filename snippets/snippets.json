@@ -178,7 +178,13 @@
 		],
 		"description": "Regular react component with redux and proptypes"
 	},
-
+	"React:Func:DisplayName": {
+		"prefix": ["display", "displayName", "dpn"],
+		"body": [
+			"${1:${TM_FILENAME_BASE}}.displayName = `${1:${TM_FILENAME_BASE}}`;"
+		],
+		"description": "React set the displayName of a component"
+	},
 	"React:Func:Bind": {
 		"prefix": ["bind"],
 		"body": ["this.$1 = this.$1.bind(this);"],
