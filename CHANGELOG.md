@@ -3,6 +3,12 @@
 All notable changes to the "react-redux-snippets" extension will be documented
 in this file.
 
+## [0.3.8] - 2019-01-03
+
+### Added
+
+- Added displayName function for react
+
 ## [0.3.7] - 2019-01-02
 
 ### Added

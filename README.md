@@ -31,13 +31,14 @@ contributions or remarks are welcome as we progress to a fixed version.
 
 ### Functions
 
-|        How | What                                   | Alternative keys                                   |
-| ---------: | -------------------------------------- | -------------------------------------------------- |
-|     `bind` | React bind functions to 'this' context | -                                                  |
-| `setstate` | React set state function               | `sets`, `ss`                                       |
-|     `defp` | React default props definition         | `def`, `defprops`, `dp`, `default`, `defaultprops` |
-|     `prop` | React PropTypes definition             | `proptypes`, `pt`                                  |
-|      `ren` | React render function                  | `render`                                           |
+|        How | What                                     | Alternative keys                                   |
+| ---------: | ---------------------------------------- | -------------------------------------------------- |
+|      `dpn` | React set the displayName of a component | `display`, `displayname`                           |
+|     `bind` | React bind functions to 'this' context   | -                                                  |
+| `setstate` | React set state function                 | `sets`, `ss`                                       |
+|     `defp` | React default props definition           | `def`, `defprops`, `dp`, `default`, `defaultprops` |
+|     `prop` | React PropTypes definition               | `proptypes`, `pt`                                  |
+|      `ren` | React render function                    | `render`                                           |
 
 ### Lifecycle methods
 
