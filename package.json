@@ -9,7 +9,7 @@
 	"displayName": "react-redux-snippets",
 	"icon": "icons/react.png",
 	"description": "react and redux code snippets",
-	"version": "1.0.0",
+	"version": "0.3.7",
 	"engines": {
 		"vscode": "^0.10.0"
 	},
