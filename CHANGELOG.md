@@ -3,7 +3,7 @@
 All notable changes to the "react-redux-snippets" extension will be documented
 in this file.
 
-## [1.0.0] - 2019-01-03
+## [1.0.0] - 2019-01-25
 
 ### Added
 
