@@ -537,5 +537,26 @@
 			"});"
 		],
 		"description": "Default test implementation of Jest"
+	},
+
+	"Jest:It": {
+		"prefix": ["it"],
+		"body": [
+			"it(`should $1`, () => {",
+			"\t//Arrange",
+			"$0",
+			"\t//Act",
+			"",
+			"\t//Assert",
+			"",
+			"});"
+		],
+		"description": "Default it implementation of Jest"
+	},
+
+	"Jest:Describe": {
+		"prefix": ["desc", "describe"],
+		"body": ["describe(`$1`, () => {", "\t$0", "});"],
+		"description": "Describe test suite"
 	}
 }
