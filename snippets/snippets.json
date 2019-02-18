@@ -522,5 +522,20 @@
 		"prefix": ["map"],
 		"body": ["${1:array}.map((${2:item(s)}) => {", "\treturn $0", "});"],
 		"description": "Map array loop"
+	},
+
+	"Jest:Test": {
+		"prefix": ["test"],
+		"body": [
+			"test(`$1`, () => {",
+			"\t//Arrange",
+			"$0",
+			"\t//Act",
+			"",
+			"\t//Assert",
+			"",
+			"});"
+		],
+		"description": "Default test implementation of Jest"
 	}
 }

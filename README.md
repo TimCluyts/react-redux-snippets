@@ -107,6 +107,12 @@ contributions or remarks are welcome as we progress to a fixed version.
 | `foreach` | Foreach loop                                         | `feach`          |
 |     `map` | Map loop                                             | -                |
 
+### Jest Functions
+
+|   How | What                                | Alternative keys |
+| ----: | ----------------------------------- | ---------------- |
+| `tes` | Default test implementation of Jest | -                |
+
 For questions or to request additions, changes and so on, please open an issue
 on the [Github page][github].
 
