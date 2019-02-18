@@ -109,9 +109,9 @@ contributions or remarks are welcome as we progress to a fixed version.
 
 ### Jest Functions
 
-|   How | What                                | Alternative keys |
-| ----: | ----------------------------------- | ---------------- |
-| `tes` | Default test implementation of Jest | -                |
+|    How | What                                | Alternative keys |
+| -----: | ----------------------------------- | ---------------- |
+| `test` | Default test implementation of Jest | -                |
 
 For questions or to request additions, changes and so on, please open an issue
 on the [Github page][github].
