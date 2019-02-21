@@ -478,7 +478,7 @@
 
 	"Redux:bindActionCreators": {
 		"prefix": ["rbac", "bind", "binda", "actionc", "redux"],
-		"body": ["{$1:actions}: bindActionCreators(dispatch, {$2:actions})"],
+		"body": ["${1:actions}: bindActionCreators(dispatch, ${2:actionFile})$0"],
 		"description": "Redux bind actions in one function"
 	},
 
