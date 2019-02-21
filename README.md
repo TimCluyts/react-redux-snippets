@@ -12,6 +12,10 @@ contributions or remarks are welcome as we progress to a fixed version.
 - Typescript
 - Typescript React
 
+## Miscellaneous
+
+- Jest testing framework included
+
 ## Snippets
 
 ### Components
@@ -106,6 +110,14 @@ contributions or remarks are welcome as we progress to a fixed version.
 |   `forin` | Loop over object values                              | `fin`            |
 | `foreach` | Foreach loop                                         | `feach`          |
 |     `map` | Map loop                                             | -                |
+
+### Jest Functions
+
+|    How | What                                | Alternative keys |
+| -----: | ----------------------------------- | ---------------- |
+| `test` | Default test implementation of Jest | -                |
+|   `it` | Default it implementation of Jest   | -                |
+| `desc` | Describe test suite                 | `describe`       |
 
 For questions or to request additions, changes and so on, please open an issue
 on the [Github page][github].
