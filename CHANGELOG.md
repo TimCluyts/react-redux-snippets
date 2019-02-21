@@ -5,6 +5,12 @@ in this file.
 
 ## [1.0.1] - 2019-02-21
 
+### Changed
+
+- Fixed a bug on bindActionCreators for Redux
+
+## [1.0.1] - 2019-02-21
+
 ### Added
 
 - Jest test support added
