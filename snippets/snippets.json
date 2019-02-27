@@ -289,7 +289,7 @@
 		"description": "React PropType String"
 	},
 
-	"React:PropTypes:Number:Required": {
+	"React:PropTypes:String:Required": {
 		"prefix": ["prop", "props", "propr", "propstring", "string"],
 		"body": ["PropTypes.string.isRequired,"],
 		"description": "React PropType String Required"
