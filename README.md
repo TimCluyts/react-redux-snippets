@@ -33,6 +33,8 @@ If you want to include any more snippets, please create an issue on GitHub and I
 | --------: | ---------------------------------------------------- | ---------------- |
 |     `imp` | Import default module                                | `import`         |
 |    `impa` | Import module as alias                               | `imp`, `import`  |
+|     `con` | Console log statement                                | -                |
+|      `@d` | Description block                                    | `@desc`          |
 |   `forof` | Loop over object keys                                | `fof`            |
 |   `forin` | Loop over object values                              | `fin`            |
 | `foreach` | Foreach loop                                         | `feach`          |
@@ -47,6 +49,7 @@ If you want to include any more snippets, please create an issue on GitHub and I
 |   `it` | Default it implementation of Jest         | -                |
 |   `it` | Default async it implementation of Jest   | `ita`            |
 | `desc` | Describe test suite                       | `describe`       |
+| `each` | Test each function                        | `te`, `teste`    |
 
 For questions or to request additions, changes and so on, please open an issue
 on the [Github page][github].

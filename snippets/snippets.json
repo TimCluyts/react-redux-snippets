@@ -59,6 +59,29 @@
 		],
 		"description": "Import module as alias"
 	},
+	"Global:ConsoleLog": {
+		"scope": "javascript,typescript,javascriptreact,typescriptreact",
+		"prefix": [
+			"con"
+		],
+		"body": [
+			"console.log(`$0`)"
+		],
+		"description": "Create console log"
+	},
+	"Global:Description": {
+		"scope": "javascript,typescript,javascriptreact,typescriptreact",
+		"prefix": [
+			"@desc",
+			"@d"
+		],
+		"body": [
+			"/**",
+			"* @description $0",
+			"*/"
+		],
+		"description": "create a description block"
+	},
 	"Global:For:Of": {
 		"prefix": [
 			"forof",
@@ -111,16 +134,7 @@
 			"test",
 			"tna"
 		],
-		"body": [
-			"test(`$1`, () => {",
-			"\t//Arrange",
-			"$0",
-			"\t//Act",
-			"",
-			"\t//Assert",
-			"",
-			"});"
-		],
+		"body": "test(`$1`, () => {});$0",
 		"description": "Default test implementation of Jest"
 	},
 	"Jest:Test:Async": {
@@ -128,48 +142,21 @@
 			"test",
 			"ta"
 		],
-		"body": [
-			"test(`$1`, async () => {",
-			"\t//Arrange",
-			"$0",
-			"\t//Act",
-			"",
-			"\t//Assert",
-			"",
-			"});"
-		],
+		"body": "test(`$1`, async () => {});$0",
 		"description": "Default async test implementation of Jest"
 	},
 	"Jest:It": {
 		"prefix": [
 			"it"
 		],
-		"body": [
-			"it(`should $1`, () => {",
-			"\t//Arrange",
-			"$0",
-			"\t//Act",
-			"",
-			"\t//Assert",
-			"",
-			"});"
-		],
+		"body": "it(`$1`, () => {});$0",
 		"description": "Default it implementation of Jest"
 	},
 	"Jest:It:Async": {
 		"prefix": [
 			"ita"
 		],
-		"body": [
-			"it(`should $1`, () => {",
-			"\t//Arrange",
-			"$0",
-			"\t//Act",
-			"",
-			"\t//Assert",
-			"",
-			"});"
-		],
+		"body": "it(`$1`, async () => {});$0",
 		"description": "Default async it implementation of Jest"
 	},
 	"Jest:Describe": {
@@ -183,5 +170,21 @@
 			"});"
 		],
 		"description": "Describe test suite"
+	},
+	"Jest:Each": {
+		"scope": "javascript,typescript,javascriptreact,typescriptreact",
+		"prefix": [
+			"te",
+			"teste",
+			"each"
+		],
+		"body": [
+			"test.each($1)(",
+			"'$2',",
+			"($3) => {$0}",
+			");"
+		],
+		"description": "Test each function"
 	}
+	
 }
