@@ -3,6 +3,14 @@
 All notable changes to the "react-redux-snippets" extension will be documented
 in this file.
 
+## [2.0.0] - 2025-02-01
+
+- Removal of all lifecycle methods from react
+- Removal of all redux snippets
+- Removal of all class related methods
+- Reworked React component shortcuts
+- Added async test methods for jest
+
 ## [1.0.1] - 2019-02-21
 
 ### Changed

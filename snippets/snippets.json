@@ -2,7 +2,7 @@
 	"React:Memo": {
 		"prefix": "memo",
 		"body": [
-			"import react, { memo } from 'react';",
+			"import { memo } from 'react';",
 			"",
 			"const ${1:${TM_FILENAME_BASE}} = memo((props) => {",
 			"\treturn $0",
@@ -11,521 +11,106 @@
 		],
 		"description": "React memo component"
 	},
-	"React:Memo:Proptypes": {
-		"prefix": ["memo", "memop"],
+	"React:Memo:PropsEqual": {
+		"prefix": "memop",
 		"body": [
-			"import react, { memo } from 'react';",
-			"import PropTypes from 'prop-types';",
+			"import { memo } from 'react';",
 			"",
 			"const ${1:${TM_FILENAME_BASE}} = memo((props) => {",
 			"\treturn $0",
-			"});",
-			"${1:${TM_FILENAME_BASE}}.propTypes = {",
-			"\t$2",
-			"};",
+			"}, ${2:arePropsEqualFunction});",
 			"export default ${1:${TM_FILENAME_BASE}};"
 		],
-		"description": "React memo component"
-	},
-	"React:Component:Stateless": {
-		"prefix": ["comp", "rsc", "stateless"],
-		"body": [
-			"import react from 'react';",
-			"",
-			"const ${1:${TM_FILENAME_BASE}} = (props) => {",
-			"\treturn $0",
-			"};",
-			"export default ${1:${TM_FILENAME_BASE}};"
-		],
-		"description": "React stateless component"
-	},
-	"React:Component:Stateless:Proptypes": {
-		"prefix": ["comp", "rsc", "rscp", "stateless"],
-		"body": [
-			"import react from 'react';",
-			"import PropTypes from 'prop-types';",
-			"",
-			"const ${1:${TM_FILENAME_BASE}} = (props) => {",
-			"\treturn $0",
-			"};",
-			"${1:${TM_FILENAME_BASE}}.propTypes = {",
-			"\t$2",
-			"};",
-			"export default ${1:${TM_FILENAME_BASE}};"
-		],
-		"description": "React stateless component with PropTypes"
-	},
-	"React:PureComponent": {
-		"prefix": "pure",
-		"body": [
-			"import react, { PureComponent } from 'react';",
-			"",
-			"class ${1:${TM_FILENAME_BASE}} extends PureComponent {",
-			"\tconstructor() {",
-			"\t\tsuper();",
-			"\t}",
-			"\trender() {",
-			"\t\treturn $0",
-			"\t}",
-			"}",
-			"export default ${1:${TM_FILENAME_BASE}};"
-		],
-		"description": "React pure component"
-	},
-	"React:PureComponent:Proptypes": {
-		"prefix": ["pure", "purep"],
-		"body": [
-			"import react, { PureComponent } from 'react';",
-			"",
-			"class ${1:${TM_FILENAME_BASE}} extends PureComponent {",
-			"\tconstructor() {",
-			"\t\tsuper();",
-			"\t}",
-			"\trender() {",
-			"\t\treturn $0",
-			"\t}",
-			"}",
-			"${1:${TM_FILENAME_BASE}}.propTypes = {",
-			"\t$2",
-			"};",
-			"export default ${1:${TM_FILENAME_BASE}};"
-		],
-		"description": "React pure component with PropTypes"
+		"description": "React memo component including arePropsEqual"
 	},
 	"React:Component": {
-		"prefix": ["comp", "compo"],
-		"body": [
-			"import react, { Component } from 'react';",
-			"",
-			"class ${1:${TM_FILENAME_BASE}} extends PureComponent {",
-			"\tconstructor() {",
-			"\t\tsuper();",
-			"\t}",
-			"\trender() {",
-			"\t\treturn $0",
-			"\t}",
-			"}",
-			"export default ${1:${TM_FILENAME_BASE}};"
+		"prefix": [
+			"comp",
+			"rc"
 		],
-		"description": "React regular component"
-	},
-	"React:Component:Proptypes": {
-		"prefix": ["comp", "compp"],
 		"body": [
-			"import react, { Component } from 'react';",
+			"import react from 'react';",
 			"",
-			"class ${1:${TM_FILENAME_BASE}} extends PureComponent {",
-			"\tconstructor() {",
-			"\t\tsuper();",
-			"\t}",
-			"\trender() {",
-			"\t\treturn $0",
-			"\t}",
-			"}",
-			"${1:${TM_FILENAME_BASE}}.propTypes = {",
-			"\t$2",
+			"function ${1:${TM_FILENAME_BASE}}(props) {",
+			"\treturn $0",
 			"};",
 			"export default ${1:${TM_FILENAME_BASE}};"
 		],
-		"description": "React regular component with PropTypes"
+		"description": "React component"
 	},
-	"React:Component:Redux": {
-		"prefix": ["comp", "rcomp", "rrc", "reduxcomp"],
-		"body": [
-			"import react, { Component } from 'react';",
-			"import { connect } from 'react-redux';",
-			"",
-			"class ${1:${TM_FILENAME_BASE}} extends PureComponent {",
-			"\tconstructor() {",
-			"\t\tsuper();",
-			"\t}",
-			"\trender() {",
-			"\t\treturn $0",
-			"\t}",
-			"}",
-			"function mapStateToProps(state) {",
-			"\treturn {",
-			"\t\t$2",
-			"\t}",
-			"}",
-			"export default connect(mapStateToProps)(${1:${TM_FILENAME_BASE}});"
-		],
-		"description": "Regular react component with redux"
-	},
-	"React:Component:Redux:Proptypes": {
-		"prefix": ["comp", "rcomp", "rcompp", "rrc", "rrcp", "reduxcomp"],
-		"body": [
-			"import react, { Component } from 'react';",
-			"import { connect } from 'react-redux';",
-			"",
-			"class ${1:${TM_FILENAME_BASE}} extends PureComponent {",
-			"\tconstructor() {",
-			"\t\tsuper();",
-			"\t}",
-			"\trender() {",
-			"\t\treturn $0",
-			"\t}",
-			"}",
-			"function mapStateToProps(state) {",
-			"\treturn {",
-			"\t\t$2",
-			"\t}",
-			"}",
-			"${1:${TM_FILENAME_BASE}}.propTypes = {",
-			"\t$3",
-			"};",
-			"export default ${1:${TM_FILENAME_BASE}};"
-		],
-		"description": "Regular react component with redux and proptypes"
-	},
-	"React:Func:DisplayName": {
-		"prefix": ["display", "displayName", "dpn"],
-		"body": [
-			"${1:${TM_FILENAME_BASE}}.displayName = `${1:${TM_FILENAME_BASE}}`;"
-		],
-		"description": "React set the displayName of a component"
-	},
-	"React:Func:Bind": {
-		"prefix": ["bind"],
-		"body": ["this.$1 = this.$1.bind(this);"],
-		"description": "React bind functions to 'this' context"
-	},
-	"React:Func:SetState": {
-		"prefix": ["setState", "sets", "ss"],
-		"body": ["this.setState({ $1: $2 });"],
-		"description": "React set state function"
-	},
-	"React:Func:PropTypes": {
-		"prefix": ["proptypes", "prop", "pt"],
-		"body": [
-			"${1:${TM_FILENAME_BASE}}.propTypes = {",
-			"\t$2: PropTypes.$3",
-			"}"
-		],
-		"description": "React Proptypes definition"
-	},
-	"React:Func:DefaultProps": {
-		"prefix": ["defp", "def", "defprop", "dp", "default", "defaultprops"],
-		"body": ["${1:${TM_FILENAME_BASE}}.defaultProps = {", "\t$0", "}"],
-		"description": "React default props definition"
-	},
-	"React:Func:Render": {
-		"prefix": ["ren", "render"],
-		"body": ["render() {", "\treturn (", "\t\t$0", "\t);", "}"],
-		"description": "React render function"
-	},
-	"React:Func:GetDerivedStateFromProps": {
-		"prefix": ["derived", "getderived", "gdsfp", "life", "lifecycle"],
-		"body": [
-			"static getDerivedStateFromProps(nextProps, prevState) {",
-			"\treturn $0;",
-			"}"
-		],
-		"description": "Called when state depends on changes in props over time"
-	},
-	"React:Func:ShouldComponentUpdate": {
-		"prefix": ["shouldcomponent", "should", "scu", "life", "lifecycle"],
-		"body": [
-			"shouldComponentUpdate(nextProps, nextState) {",
-			"\treturn $0;",
-			"}"
-		],
-		"description": "Returns false to skip rendering"
-	},
-	"React:Func:GetSnapshotBeforeUpdate": {
-		"prefix": ["getsnapshot", "snapshot", "snap", "life", "lifecycle"],
-		"body": [
-			"getSnapshotBeforeUpdate(prevProps, prevState) {",
-			"\treturn $0;",
-			"}"
-		],
-		"description": "Returns a snapshot or should return null"
-	},
-
-	"React:Func:GetSnapshotBeforeUpdateComponentDidUpdate": {
-		"prefix": ["getsnapshot", "snapshot", "snap", "life", "lifecycle"],
-		"body": [
-			"getSnapshotBeforeUpdate(prevProps, prevState) {",
-			"\treturn $1;",
-			"}",
-			"",
-			"componentDidUpdate(prevProps, prevState, snapshot) {",
-			"\t$0;",
-			"}"
-		],
-		"description": "Returns a snapshot and pass it to ComponentDidUpdate"
-	},
-	"React:Func:ComponentDidMount": {
-		"prefix": ["didmount", "life", "lifecycle"],
-		"body": ["componentDidMount() {", "\treturn $0;", "}"],
-		"description": "Called right after mounting the component"
-	},
-	"React:Func:ComponentDidUpdate": {
-		"prefix": ["didupdate", "life", "lifecycle"],
-		"body": ["componentDidUpdate(prevProps, prevState) {", "\t$0;", "}"],
-		"description": "Called whenever a component will be updated"
-	},
-	"React:Func:ComponentWillUnmount": {
-		"prefix": ["willunmount", "unmount", "life", "lifecycle"],
-		"body": ["componentWillUnmount() {", "\t$0;", "}"],
-		"description": "Called when component is being removed from the dom"
-	},
-
-	"React:PropTypes:Number": {
-		"prefix": ["prop", "propn", "propnumber", "number"],
-		"body": ["PropTypes.number,"],
-		"description": "React PropType Number"
-	},
-
-	"React:PropTypes:Number:Required": {
-		"prefix": ["prop", "propn", "propr", "propnumber", "number"],
-		"body": ["PropTypes.number.isRequired,"],
-		"description": "React PropType Number Required"
-	},
-
-	"React:PropTypes:String": {
-		"prefix": ["prop", "props", "propstring", "string"],
-		"body": ["PropTypes.string,"],
-		"description": "React PropType String"
-	},
-
-	"React:PropTypes:String:Required": {
-		"prefix": ["prop", "props", "propr", "propstring", "string"],
-		"body": ["PropTypes.string.isRequired,"],
-		"description": "React PropType String Required"
-	},
-
-	"React:PropTypes:Array": {
-		"prefix": ["prop", "propa", "proparray", "array"],
-		"body": ["PropTypes.array,"],
-		"description": "React PropType Array"
-	},
-
-	"React:PropTypes:Array:Required": {
-		"prefix": ["prop", "propa", "propr", "proparray", "array"],
-		"body": ["PropTypes.array.isRequired,"],
-		"description": "React PropType Array Required"
-	},
-
-	"React:PropTypes:Bool": {
-		"prefix": ["prop", "propb", "propbool", "bool"],
-		"body": ["PropTypes.bool,"],
-		"description": "React PropType Boolean"
-	},
-	"React:PropTypes:Bool:Required": {
-		"prefix": ["prop", "propb", "propr", "propbool", "bool"],
-		"body": ["PropTypes.bool.isRequired,"],
-		"description": "React PropType Boolean Required"
-	},
-
-	"React:PropTypes:Object": {
-		"prefix": ["prop", "propo", "propobject", "object"],
-		"body": ["PropTypes.object,"],
-		"description": "React PropType Object"
-	},
-
-	"React:PropTypes:Object:Required": {
-		"prefix": ["prop", "propo", "propr", "propobject", "object"],
-		"body": ["PropTypes.object.isRequired,"],
-		"description": "React PropType Object Required"
-	},
-
-	"React:PropTypes:Function": {
-		"prefix": ["prop", "propf", "propfunc", "func"],
-		"body": ["PropTypes.func,"],
-		"description": "React PropType Function"
-	},
-
-	"React:PropTypes:Function:Required": {
-		"prefix": ["prop", "propf", "propr", "propfunc", "func"],
-		"body": ["PropTypes.func.isRequired,"],
-		"description": "React PropType Function Required"
-	},
-
-	"React:PropTypes:Symbol": {
-		"prefix": ["prop", "props", "propsymbol", "symbol"],
-		"body": ["PropTypes.symbol,"],
-		"description": "React PropType Symbol"
-	},
-
-	"React:PropTypes:Symbol:Required": {
-		"prefix": ["prop", "props", "propr", "propsymbol", "symbol"],
-		"body": ["PropTypes.symbol.isRequired,"],
-		"description": "React PropType Symbol Required"
-	},
-
-	"React:PropTypes:Node": {
-		"prefix": ["prop", "propn", "propnode", "node"],
-		"body": ["PropTypes.node,"],
-		"description": "React PropType Node"
-	},
-
-	"React:PropTypes:Node:Required": {
-		"prefix": ["prop", "propn", "propr", "propnode", "node"],
-		"body": ["PropTypes.node.isRequired,"],
-		"description": "React PropType Node Required"
-	},
-
-	"React:PropTypes:Element": {
-		"prefix": ["prop", "prope", "propelement", "element"],
-		"body": ["PropTypes.element,"],
-		"description": "React PropType Element"
-	},
-
-	"React:PropTypes:Element:Required": {
-		"prefix": ["prop", "prope", "propr", "propelement", "element"],
-		"body": ["PropTypes.element.isRequired,"],
-		"description": "React PropType Element Required"
-	},
-
-	"React:PropTypes:InstanceOf": {
-		"prefix": ["prop", "propi", "propinstance", "instance", "instanceof"],
-		"body": ["PropTypes.instanceOf($1),"],
-		"description": "React PropType InstanceOf"
-	},
-
-	"React:PropTypes:InstanceOf:Required": {
-		"prefix": [
-			"prop",
-			"propi",
-			"propr",
-			"propinstance",
-			"instance",
-			"instanceof"
-		],
-		"body": ["PropTypes.instanceOf($1).isRequired,"],
-		"description": "React PropType InstanceOf Required"
-	},
-
-	"React:PropTypes:OneOf": {
-		"prefix": ["prop", "propone", "proponeof", "one", "oneof"],
-		"body": ["PropTypes.oneOf([$1]),"],
-		"description": "React PropType OneOf"
-	},
-
-	"React:PropTypes:OneOf:Required": {
-		"prefix": ["prop", "propone", "propr", "proponeof", "one", "oneof"],
-		"body": ["PropTypes.oneOf([$1]).isRequired,"],
-		"description": "React PropType OneOf Required"
-	},
-
-	"React:PropTypes:OneOfType": {
-		"prefix": ["prop", "proponetype", "proponeoftype", "onetype", "oneoftype"],
-		"body": ["PropTypes.oneOfType([$1]),"],
-		"description": "React PropType OneOfType"
-	},
-
-	"React:PropTypes:OneOfType:Required": {
-		"prefix": [
-			"prop",
-			"proponetype",
-			"propr",
-			"proponeoftype",
-			"onetype",
-			"oneoftype"
-		],
-		"body": ["PropTypes.oneOfType([$1]).isRequired,"],
-		"description": "React PropType OneOfType Required"
-	},
-
-	"React:PropTypes:ArrayOf": {
-		"prefix": ["prop", "propa", "proparrayof", "arrayof", "array"],
-		"body": ["PropTypes.arrayOf($1),"],
-		"description": "React PropType ArrayOf"
-	},
-
-	"React:PropTypes:ArrayOf:Required": {
-		"prefix": ["prop", "propa", "proparrayof", "arrayof", "propr", "array"],
-		"body": ["PropTypes.arrayOf($1).isRequired,"],
-		"description": "React PropType ArrayOf Required"
-	},
-
-	"React:PropTypes:ObjectOf": {
-		"prefix": ["prop", "propo", "propobjectof", "objectof", "object"],
-		"body": ["PropTypes.objectOf($1),"],
-		"description": "React PropType ObjectOf"
-	},
-
-	"React:PropTypes:ObjectOf:Required": {
-		"prefix": ["prop", "propo", "propobjectof", "objectof", "propr", "object"],
-		"body": ["PropTypes.objectOf($1).isRequired,"],
-		"description": "React PropType ObjectOf Required"
-	},
-
-	"React:PropTypes:Shape": {
-		"prefix": ["prop", "propsh", "propshape", "shape"],
-		"body": ["PropTypes.shape({", "\t$1", "}),"],
-		"description": "React PropType Shape"
-	},
-
-	"React:PropTypes:Shape:Required": {
-		"prefix": ["prop", "propsh", "propshape", "shape", "propr"],
-		"body": ["PropTypes.shape({", "\t$1", "}).isRequired,"],
-		"description": "React PropType Shape Required"
-	},
-
-	"Redux:mapStateToProps": {
-		"prefix": ["rstp", "map", "mapToProps", "redux", "propsTo"],
-		"body": ["function mapStateToProps(state) {", "\treturn $0;", "}"],
-		"description": "Redux function mapStateToProps"
-	},
-
-	"Redux:mapDispatchToProps": {
-		"prefix": ["rdtp", "map", "mapToProps", "dispatch", "dispTo", "redux"],
-		"body": ["function mapDispatchToProps(dispatch) {", "\treturn $0;", "}"],
-		"description": "Redux function mapDispatchToProps"
-	},
-
-	"Redux:bindActionCreators": {
-		"prefix": ["rbac", "bind", "binda", "actionc", "redux"],
-		"body": ["${1:actions}: bindActionCreators(${2:actions}, dispatch)$0"],
-		"description": "Redux bind actions in one function"
-	},
-
-	"Global:Class:Constructor": {
-		"prefix": ["con", "constructor"],
-		"body": ["constructor(props) {", "\t super(props);", "\t$0", "}"],
-		"description": "Class constructor calling the super class with props"
-	},
-
 	"Global:Import:Module": {
-		"prefix": ["imp", "import"],
-		"body": ["import ${1:name} from '${2:module}';$0"],
+		"prefix": [
+			"imp",
+			"import"
+		],
+		"body": [
+			"import ${1:name} from '${2:module}';$0"
+		],
 		"description": "Import default module"
 	},
-
 	"Global:Import:Alias": {
-		"prefix": ["imp", "impa", "import"],
-		"body": ["import { ${1:original} as ${2:alias} }  from '${3:module}';$0"],
+		"prefix": [
+			"imp",
+			"impa",
+			"import"
+		],
+		"body": [
+			"import { ${1:original} as ${2:alias} }  from '${3:module}';$0"
+		],
 		"description": "Import module as alias"
 	},
-
 	"Global:For:Of": {
-		"prefix": ["forof", "fof"],
-		"body": ["for(let ${1:item} of ${2:object}) {", "\t$0", "}"],
+		"prefix": [
+			"forof",
+			"fof"
+		],
+		"body": [
+			"for(let ${1:item} of ${2:object}) {",
+			"\t$0",
+			"}"
+		],
 		"description": "Loop over object keys"
 	},
-
 	"Global:For:In": {
-		"prefix": ["forin", "fin"],
-		"body": ["for(let ${1:item} in ${2:object}) {", "\t$0", "}"],
+		"prefix": [
+			"forin",
+			"fin"
+		],
+		"body": [
+			"for(let ${1:item} in ${2:object}) {",
+			"\t$0",
+			"}"
+		],
 		"description": "Loop over object values"
 	},
-
 	"Global:ForEach": {
-		"prefix": ["foreach", "feach"],
-		"body": ["${1:array}.forEach((${2:item(s)}) => {", "\t$0", "});"],
+		"prefix": [
+			"foreach",
+			"feach"
+		],
+		"body": [
+			"${1:array}.forEach((${2:item(s)}) => {",
+			"\t$0",
+			"});"
+		],
 		"description": "Foreach loop over array"
 	},
-
 	"Global:Map": {
-		"prefix": ["map"],
-		"body": ["${1:array}.map((${2:item(s)}) => {", "\treturn $0", "});"],
+		"prefix": [
+			"map"
+		],
+		"body": [
+			"${1:array}.map((${2:item(s)}) => {",
+			"\treturn $0",
+			"});"
+		],
 		"description": "Map array loop"
 	},
-
 	"Jest:Test": {
-		"prefix": ["test"],
+		"prefix": [
+			"test",
+			"tna"
+		],
 		"body": [
 			"test(`$1`, () => {",
 			"\t//Arrange",
@@ -538,9 +123,27 @@
 		],
 		"description": "Default test implementation of Jest"
 	},
-
+	"Jest:Test:Async": {
+		"prefix": [
+			"test",
+			"ta"
+		],
+		"body": [
+			"test(`$1`, async () => {",
+			"\t//Arrange",
+			"$0",
+			"\t//Act",
+			"",
+			"\t//Assert",
+			"",
+			"});"
+		],
+		"description": "Default async test implementation of Jest"
+	},
 	"Jest:It": {
-		"prefix": ["it"],
+		"prefix": [
+			"it"
+		],
 		"body": [
 			"it(`should $1`, () => {",
 			"\t//Arrange",
@@ -553,10 +156,32 @@
 		],
 		"description": "Default it implementation of Jest"
 	},
-
+	"Jest:It:Async": {
+		"prefix": [
+			"ita"
+		],
+		"body": [
+			"it(`should $1`, () => {",
+			"\t//Arrange",
+			"$0",
+			"\t//Act",
+			"",
+			"\t//Assert",
+			"",
+			"});"
+		],
+		"description": "Default async it implementation of Jest"
+	},
 	"Jest:Describe": {
-		"prefix": ["desc", "describe"],
-		"body": ["describe(`$1`, () => {", "\t$0", "});"],
+		"prefix": [
+			"desc",
+			"describe"
+		],
+		"body": [
+			"describe(`$1`, () => {",
+			"\t$0",
+			"});"
+		],
 		"description": "Describe test suite"
 	}
 }
