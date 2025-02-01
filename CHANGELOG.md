@@ -10,6 +10,7 @@ in this file.
 - Removal of all class related methods
 - Reworked React component shortcuts
 - Added async test methods for jest
+- Added console log, description block and test each functions
 
 ## [1.0.1] - 2019-02-21
 
